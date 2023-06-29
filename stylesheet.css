@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background: rgb(2,0,36);
+    background: linear-gradient(62deg, rgba(2,0,36,1) 0%, rgba(9,9,121,0.7651261188068977) 35%, rgba(0,212,255,1) 100%);
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .box {
+    width: 450px; /* Increased box width */
+    padding: 30px; /* Increased padding */
+    background-color: #222222; /* Changed to an even darker color */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .additional-text {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffffff; /* Changed additional text color to white */
+  }
+  
+  h1 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+    background: linear-gradient(to bottom, white 50%, rgba(37, 150, 190, 0.6) 50%); /* Added lighter fade effect */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .line {
+    width: 100%;
+    height: 1px;
+    background-color: #ffffff; /* Changed line color to white */
+    margin-bottom: 20px;
+  }
+  
+  .social-boxes {
+    display: flex;
+    flex-wrap: wrap; /* Added flex-wrap to allow wrapping of elements */
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    margin-top: 20px; /* Added margin-top to create more space */
+  }
+  
+  .social-box {
+    flex: 1 1 calc(50% - 10px); /* Adjusted flex property to create two columns with spacing */
+    margin: 5px; /* Added margin to create spacing between elements */
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    background-image: linear-gradient(to bottom left, #000000 30%, #2596be 70%); /* Changed gradient colors */
+    padding: 10px; /* Added padding to increase size */
+  }
+  
+  .social-text {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 5px;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .box {
+      width: 90%;
+    }
+  }
+  
